@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/BCaroline01/news/issues"
   },
-  "homepage": "https://github.com/BCaroline01/news#readme"
+  "homepage": "https://github.com/BCaroline01/news#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
