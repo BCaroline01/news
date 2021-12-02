@@ -1,1 +1,85 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+h2 {
+  color: #979696;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+}
+
+.container .article {
+  cursor: pointer;
+  height: 250px;
+}
+
+.container .article a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.container .article a img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .article a .article-title {
+  display: none;
+}
+
+.container .article:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.container .article:hover a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+}
+
+.container .article:hover a img {
+  display: none;
+}
+
+.container .article:hover a .article-title {
+  height: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

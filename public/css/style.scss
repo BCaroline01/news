@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+h2{
+color: rgb(151, 150, 150);
+text-align: center;
+font-size: 30px;
+padding: 30px 0;
+text-transform: uppercase;
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+
+  .article {
+    cursor: pointer;
+    height: 250px;
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      width: 100%;
+        height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+      .article-title{
+          display: none;
+      }
+    }
+  }
+  .article:hover{
+    cursor: pointer;
+    background-color: black;
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      img {
+        display: none;
+      }
+      .article-title{
+        height: 100%;
+          padding: 0 20px;
+          display: flex;
+          color: white;
+          justify-content: center;
+          align-items: center;
+      }
+    } 
+  }
+}

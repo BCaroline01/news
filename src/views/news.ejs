@@ -9,18 +9,23 @@
   </head>
   <body>
     <header>
-      <div class="search">Rechercher</div>
+      <nav>
+        
+      </nav>
     </header>
+
     <main>
-      <h2>liste des news</h2>
-      <% data.articles.forEach(function(article,index){ %>
-      <a href="<%- article.url %>" target="_blank">
-        <div class="container">
-        <img src="<%- article.urlToImage %>" alt="" />
-        <h3><%- article.title %> : </h3>
+      <h2>Les dernières actualités Technologie</h2>
+      <div class="container">
+        <% data.articles.forEach(function(article,index){ %>
+        <div class="article">
+          <a href="<%- article.url %>" target="_blank">
+            <img src="<%- article.urlToImage %>" alt="" />
+            <h3 class="article-title"><%- article.title %> </h3>
+          </a>
+        </div>
+        <% }); %>
       </div>
-    </a>
-      <% }); %>
     </main>
   </body>
 </html>
